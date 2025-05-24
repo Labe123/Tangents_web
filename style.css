@@ -1,0 +1,72 @@
+body { 
+    font-family: 'Arial', sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen { 
+    width: 100%;
+    max-width: 600px;
+    padding: 40px 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.banner { 
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.home-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.home-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.home-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+#home-join-lobby-btn {
+    background-color: #3498db;
+    color: white;
+}
+
+#home-create-lobby-btn {
+    background-color: #2ecc71;
+    color: white;
+}
+
+/* Add more styles for buttons, inputs, banners etc. */
+button { padding: 10px 15px; margin: 5px; cursor: pointer; }
+input[type="text"], input[type="number"] { padding: 10px; margin: 5px; width: 200px; }
+.digit-input { width: 30px; height: 40px; text-align: center; margin: 2px; font-size: 1.5em; border: 1px solid #ccc; }
+.hidden { display: none !important; }
+/* Add more specific styles as you build each screen */
